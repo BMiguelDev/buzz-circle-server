@@ -1,6 +1,6 @@
 # Buzz Circle Server
 
-#### This API is the backend of the [Buzz Circle app](https://bmigueldev.github.io/buzz-circle/) and is deployed on [Render](https://render.com/). It uses json-server to provide a simple database of a blog's posts and users, and allows API calls for CRUD operations
+#### This API is the backend of the [Buzz Circle app](https://github.com/BMiguelDev/buzz-circle) and is deployed on [Render](https://render.com/). It uses json-server to provide a simple database of a blog's posts and users, and allows API calls for CRUD operations
 
 #### Developed using NodeJS and Json-Server
 
