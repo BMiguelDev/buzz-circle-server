@@ -8,7 +8,6 @@ server.use(middlewares)
 // Rewrite routes
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',    // /api/posts → /posts
-    //'/blog/:resource/:id/show': '/:resource/:id'
 }))
 
 server.use(router)
