@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: rgb(238, 238, 238);
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .85rem;
+    margin: 1rem 0;
+}
+
+body h1 {
+    font-size: 3.25rem;
+    text-align: center;
+}
+
+body p {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+body div {
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+body div h3 {
+    font-size: 1.75rem;
+}
+
+body div section {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding-left: .5rem;
+
+}
+
+body div section h6 {
+    font-size: 1.25rem;
+}
+
+body div section ul {
+    list-style: inside;
+    gap: .5rem;
+    padding-left: .5rem;
+}
+
+body div section ul li {
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+    border-top: .01rem dashed rgb(131, 131, 131);
+}
+
+body div section ul li:nth-of-type(1) {
+    border: none;
+}
+
+body div section ul li span {
+    padding-right: .5rem;
+}
+
+body div section ul li em {
+    padding-right: .5rem;
+}
+
+/* Media query for unsuitable screens (mobile extremelly small) */
+@media screen and (max-width: 100px), screen and (max-height: 100px) {
+
+    body {
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    body::before {
+        position: fixed;
+        visibility: visible;
+        color: rgb(238, 238, 238);
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        content: "Your screen is too small to display this page";
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        font-size: .85rem;
+        line-height: .75rem;
+    }
+}
+
+/* Mobile smartphone portrait screens */
+@media screen and (min-width: 100px) and (max-width: 400px) and (min-height: 100px),
+screen and (min-width: 100px) and (min-height: 100px) and (max-height: 200px) {
+
+    body {
+        gap: .5rem;
+    }
+
+    body h1 {
+        font-size: 1.75rem;
+        line-height: 1.5rem;
+    }
+    
+    body p {
+        font-size: 1.25rem;
+        line-height: 1.1rem;
+    }
+
+    body div {
+        margin: 0 2.5%;
+        gap: .45rem;
+    }
+    
+    body div h3 {
+        font-size: 1.15rem;
+    }
+    
+    body div section {
+        gap: .1rem;
+        padding-left: .5rem;
+    }
+    
+    body div section h6 {
+        font-size: 1rem;
+    }
+    
+    body div section ul {
+        gap: .5rem;
+        padding-left: .25rem;
+        font-size: .65rem;
+    }
+    
+    body div section ul li {
+        padding-bottom: .2rem;
+        padding-top: .2rem;
+    }
+
+    
+    body div section ul li span {
+        padding-right: .325rem;
+    }
+    
+    body div section ul li em {
+        padding-right: .325rem;
+    }
+}
+
+/* Mobile smartphone screens (medium) */
+@media screen and (min-width: 400px) and (max-width: 900px) and (min-height: 200px) {
+
+    body {
+        gap: .5rem
+    }
+
+    body h1 {
+        font-size: 2.5rem;
+    }
+    
+    body p {
+        font-size: 2rem;
+        line-height: 1.25rem;
+    }
+
+    body div {
+        margin: 0 5%;
+        gap: .5rem;
+    }
+    
+    body div h3 {
+        font-size: 1.45rem;
+    }
+    
+    body div section {
+        gap: .1rem;
+        padding-left: .5rem;
+    }
+    
+    body div section h6 {
+        font-size: 1.15rem;
+    }
+    
+    body div section ul {
+        gap: .5rem;
+        padding-left: .25rem;
+        font-size: .85rem;
+    }
+    
+    body div section ul li {
+        padding-bottom: .225rem;
+        padding-top: .225rem;
+    }
+
+    
+    body div section ul li span {
+        padding-right: .45rem;
+    }
+    
+    body div section ul li em {
+        padding-right: .45rem;
+    }
+}
