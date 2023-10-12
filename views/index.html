@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <h1>Buzz Circle API</h1>
+    <div>
+        <h3>Routes:</h3>
+        <section>
+            <h6><u>Posts</u></h6>
+            <ul>
+                <li><span>GET</span><em>/posts&nbsp</em><b> ➜ &nbsp Get all posts </b></li>
+                <li><span>GET</span><em>/posts/?page=&lt;pageNumber&gt;&nbsp</em><b>➜ &nbsp Get a page of posts</b></li>
+                <li><span>GET</span><em>/posts/?userId=&lt;userId&gt;&nbsp</em><b> ➜ &nbsp Get posts with userId
+                        &lt;userId&gt;</b></li>
+                <li><span>POST</span><em>/posts</em><b> ➜ &nbsp Add new post</b></li>
+                <li><span>GET</span><em>/posts/:postId</em><b> ➜ &nbsp Get post with id &lt;postId&gt;</b></li>
+                <li><span>PUT</span><em>/posts/:postId</em><b> ➜ &nbsp Update post</b></li>
+                <li><span>DELETE</span><em>/posts/:postId</em><b> ➜ &nbsp Delete post</b></li>
+                <li><span>PATCH</span><em>/posts/:postId</em><b> ➜ &nbsp Update post reactions</b></li>
+            </ul>
+        </section>
+        <section>
+            <h6><u>Users</u></h6>
+            <ul>
+                <li><span>GET</span><em>/users</em><b> ➜ &nbsp Get all users</b></li>
+                <li><span>GET</span><em>/users/?page=&lt;pageNumber&gt;</em><b>➜ &nbsp Get a page of users</b></li>
+                <li><span>GET</span><em>/users/?username=&lt;username&gt;</em><b> ➜ &nbsp Get user with username
+                        &lt;username&gt;</b></li>
+                <li><span>GET</span><em>/users/:userId</em><b> ➜ &nbsp Get user with id &lt;userId&gt;</b></li>
+                <li><span>DELETE</span><em>/users/:userId</em><b> ➜ &nbsp Delete user</b></li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
