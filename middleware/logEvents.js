@@ -8,7 +8,7 @@ const { v4: uuid } = require('uuid');
 const logEvents = async (message, logFileName) => {
     const dateTime = `${format(new Date(), 'yyyy/MM/dd\tHH:mm:ss')}`;
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
-    console.log(logItem);   // TODO: Remove this
+    console.log(logItem);   // Log item to the console so we can see requests on the server's host platform
 
     try {
         if(!fs.existsSync(path.join(__dirname, '..', 'logs'))) {
