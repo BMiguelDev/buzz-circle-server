@@ -4,7 +4,7 @@
 
 #### Developed using NodeJS, ExpressJs and MongoDB
 
-#### Check the API: https://buzz-circle-server.onrender.com/
+<!-- #### Check the API: https://buzz-circle-server.onrender.com/ -->
 
 #### Check the app: https://bmigueldev.github.io/buzz-circle/
 
